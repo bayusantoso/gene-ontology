@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-9">
+        <form action="result" method="post" name="search">
+            <div class="form-group">
+                {{ form.query(size=40, class="form-control input-sm") }}<br />
+                <input type="submit" class="btn btn-default" value="Search" />
+            </div>
+        </form>
+    </div>
+</div>
+<div class="docs-content">
+    <table class="table_list">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Ontology</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+{% endblock %}
